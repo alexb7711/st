@@ -1,3 +1,20 @@
+#Introduction
+This is my build of st terminal. It patched to be effective but not cumbersome. 
+
+It supports opening/copying links using rofi and copying previous commands. You can zoom in/out using Alt+Shift+J/K, copy and paste with Alt+c/v.
+
+# Dependencies
+* rofi [https://github.com/adi1090x/rofi](https://github.com/adi1090x/rofi)
+* rofi-dmenu [https://aur.archlinux.org/packages/rofi-dmenu/](https://aur.archlinux.org/packages/rofi-dmenu/)
+* xdotool
+* xdg-utils
+
+# Patches
+*
+
+# What is ST?
+As described by suckless:
+
 st - simple terminal
 --------------------
 st is a simple terminal emulator for X which sucks less.
