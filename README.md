@@ -10,7 +10,11 @@ It supports opening/copying links using rofi and copying previous commands. You 
 * xdg-utils
 
 # Patches
-*
+* alpha
+* GruvBox-Dark
+* AnySize
+* ScrollBack
+* ExternalPipe
 
 # What is ST?
 As described by suckless:
