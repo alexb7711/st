@@ -18,6 +18,8 @@ $(OBJ)	Makefile	/^$(OBJ): config.h config.mk$/;"	t
 -109,6 +112,7	patches/st-alpha-0.8.2.diff	/^@@ -109,6 +112,7 @@ static const char *colorname[] = {$/;"	h	modifiedFile:a/config.def.h
 -1117,7 +1177,7	patches/st-scrollback-20190331-21367a0.diff	/^@@ -1117,7 +1177,7 @@ tnewline(int first_col)$/;"	h	modifiedFile:a/st.c
 -1123,7 +1127,7	patches/st-anysize-0.8.1.diff	/^@@ -1123,7 +1127,7 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
+-1130,7 +1132,7	patches/st-vertcenter-0.7.diff	/^@@ -1130,7 +1132,7 @@$/;"	h	modifiedFile:a/x.c
+-1155,7 +1157,7	patches/st-vertcenter-0.7.diff	/^@@ -1155,7 +1157,7 @@$/;"	h	modifiedFile:a/x.c
 -117,6 +121,9	patches/st-scrollback-20190331-21367a0.diff	/^@@ -117,6 +121,9 @@ typedef struct {$/;"	h	modifiedFile:a/st.c
 -117,7 +121,7	patches/st-alpha-0.8.2.diff	/^@@ -117,7 +121,7 @@ static const char *colorname[] = {$/;"	h	modifiedFile:a/config.def.h
 -120,3 +120,4	patches/st-alpha-0.8.2.diff	/^@@ -120,3 +120,4 @@ extern char *termname;$/;"	h	modifiedFile:a/st.h
@@ -25,6 +27,7 @@ $(OBJ)	Makefile	/^$(OBJ): config.h config.mk$/;"	t
 -1282,14 +1342,14	patches/st-scrollback-20190331-21367a0.diff	/^@@ -1282,14 +1342,14 @@ void$/;"	h	modifiedFile:a/st.c
 -1296,10 +1296,6	patches/st-bold-is-not-bright-20190127-3be4cf1.diff	/^@@ -1296,10 +1296,6 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, i/;"	h	modifiedFile:a/x.c
 -1349,17 +1353,17	patches/st-anysize-0.8.1.diff	/^@@ -1349,17 +1353,17 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, /;"	h	modifiedFile:a/x.c
+-1371,12 +1373,12	patches/st-vertcenter-0.7.diff	/^@@ -1371,12 +1373,12 @@$/;"	h	modifiedFile:a/x.c
 -1452,35 +1456,35	patches/st-anysize-0.8.1.diff	/^@@ -1452,35 +1456,35 @@ xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og)$/;"	h	modifiedFile:a/x.c
 -149,6 +149,7	patches/st-font2-20190326-f64c2f8.diff	/^@@ -149,6 +149,7 @@ static void xhints(void);$/;"	h	modifiedFile:a/x.c
 -16,6 +16,8	patches/st-keyboard_select-0.8.2.diff	/^@@ -16,6 +16,8 @@$/;"	h	modifiedFile:a/st.c
@@ -50,16 +53,12 @@ $(OBJ)	Makefile	/^$(OBJ): config.h config.mk$/;"	t
 -2586,3 +2591,220	patches/st-keyboard_select-0.8.2.diff	/^@@ -2586,3 +2591,220 @@ redraw(void)$/;"	h	modifiedFile:a/st.c
 -261,7 +261,7	patches/st-delkey-20160727-308bfbf.diff	/^@@ -261,7 +261,7 @@ static Key key[] = {$/;"	h	modifiedFile:a/config.def.h
 -2616,3 +2616,65	patches/st-copyurl-20190202-0.8.1.diff	/^@@ -2616,3 +2616,65 @@ redraw(void)$/;"	h	modifiedFile:a/st.c
--268,6 +268,7	patches/st-vertcenter-0.7.diff	/^@@ -268,6 +268,7 @@ typedef struct {$/;"	h	modifiedFile:a/st.c
 -296,6 +297,7	patches/st-font2-20190326-f64c2f8.diff	/^@@ -296,6 +297,7 @@ zoomabs(const Arg *arg)$/;"	h	modifiedFile:a/x.c
 -311,7 +312,7	patches/st-anysize-0.8.1.diff	/^@@ -311,7 +312,7 @@ zoomreset(const Arg *arg)$/;"	h	modifiedFile:a/x.c
 -316,8 +316,7	patches/st-delkey-20160727-308bfbf.diff	/^@@ -316,8 +316,7 @@ static Key key[] = {$/;"	h	modifiedFile:a/config.def.h
 -319,7 +320,7	patches/st-anysize-0.8.1.diff	/^@@ -319,7 +320,7 @@ evcol(XEvent *e)$/;"	h	modifiedFile:a/x.c
--3359,6 +3360,7	patches/st-vertcenter-0.7.diff	/^@@ -3359,6 +3360,7 @@ xloadfonts(char *fontstr, double fontsize)$/;"	h	modifiedFile:a/st.c
 -35,6 +35,7	patches/st-scrollback-20190331-21367a0.diff	/^@@ -35,6 +35,7 @@$/;"	h	modifiedFile:a/st.c
--3584,7 +3586,7	patches/st-vertcenter-0.7.diff	/^@@ -3584,7 +3586,7 @@ xmakeglyphfontspecs(XftGlyphFontSpec *specs, const Glyph *glyphs, int len,/;"	h	modifiedFile:a/st.c
 -36,4 +37,6	patches/st-keyboard_select-0.8.2.diff	/^@@ -36,4 +37,6 @@ void xsetmode(int, unsigned int);$/;"	h	modifiedFile:a/win.h
--3796,12 +3798,12	patches/st-vertcenter-0.7.diff	/^@@ -3796,12 +3798,12 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, /;"	h	modifiedFile:a/st.c
 -409,10 +416,10	patches/st-scrollback-20190331-21367a0.diff	/^@@ -409,10 +416,10 @@ tlinelen(int y)$/;"	h	modifiedFile:a/st.c
 -42,6 +43,9	patches/st-scrollback-20190331-21367a0.diff	/^@@ -42,6 +43,9 @@$/;"	h	modifiedFile:a/st.c
 -521,7 +528,7	patches/st-scrollback-20190331-21367a0.diff	/^@@ -521,7 +528,7 @@ selsnap(int *x, int *y, int direction)$/;"	h	modifiedFile:a/st.c
@@ -77,11 +76,13 @@ $(OBJ)	Makefile	/^$(OBJ): config.h config.mk$/;"	t
 -78,6 +78,7	patches/st-anysize-0.8.1.diff	/^@@ -78,6 +78,7 @@ typedef XftGlyphFontSpec GlyphFontSpec;$/;"	h	modifiedFile:a/x.c
 -793,8 +797,8	patches/st-anysize-0.8.1.diff	/^@@ -793,8 +797,8 @@ xhints(void)$/;"	h	modifiedFile:a/x.c
 -80,6 +80,7	patches/st-externalpipe-0.8.2.diff	/^@@ -80,6 +80,7 @@ void die(const char *, ...);$/;"	h	modifiedFile:a/st.h
+-80,6 +80,7	patches/st-vertcenter-0.7.diff	/^@@ -80,6 +80,7 @@$/;"	h	modifiedFile:a/x.c
 -80,6 +80,8	patches/st-scrollback-20190331-21367a0.diff	/^@@ -80,6 +80,8 @@ void die(const char *, ...);$/;"	h	modifiedFile:a/st.h
 -82,6 +82,9	patches/st-alpha-0.8.2.diff	/^@@ -82,6 +82,9 @@ char *termname = "st-256color";$/;"	h	modifiedFile:a/config.def.h
 -831,6 +838,9	patches/st-scrollback-20190331-21367a0.diff	/^@@ -831,6 +838,9 @@ void$/;"	h	modifiedFile:a/st.c
 -84,41 +84,35	patches/st-gruvbox-dark-0.8.2.diff	/^@@ -84,41 +84,35 @@ static unsigned int tabspaces = 8;$/;"	h	modifiedFile:a/config.def.h
 -85,6 +85,7	patches/st-copyurl-20190202-0.8.1.diff	/^@@ -85,6 +85,7 @@ void printscreen(const Arg *);$/;"	h	modifiedFile:a/st.h
+-949,6 +950,7	patches/st-vertcenter-0.7.diff	/^@@ -949,6 +950,7 @@$/;"	h	modifiedFile:a/x.c
 -977,6 +979,67	patches/st-font2-20190326-f64c2f8.diff	/^@@ -977,6 +979,67 @@ xloadfonts(char *fontstr, double fontsize)$/;"	h	modifiedFile:a/x.c
 -98,6 +98,7	patches/st-alpha-0.8.2.diff	/^@@ -98,6 +98,7 @@ typedef struct {$/;"	h	modifiedFile:a/x.c
 .c.o	Makefile	/^.c.o:$/;"	t
@@ -127,6 +128,7 @@ DC	x.c	/^} DC;$/;"	t	typeref:struct:__anon0b88b7ae0908	file:
 DEFAULT	st.h	/^#define DEFAULT(/;"	d
 DESCRIPTION	st.1	/^.SH DESCRIPTION$/;"	s	title:ST
 DIVCEIL	st.h	/^#define DIVCEIL(/;"	d
+Dependencies	README.md	/^# Dependencies$/;"	c
 Draw	x.c	/^typedef XftDraw *Draw;$/;"	t	typeref:typename:XftDraw *	file:
 EARGF	arg.h	/^#define EARGF(/;"	d
 ESC_ALTCHARSET	st.c	/^	ESC_ALTCHARSET = 8,$/;"	e	enum:escape_state	file:
@@ -203,7 +205,9 @@ OBJ	Makefile	/^OBJ = $(SRC:.c=.o)$/;"	m
 OPTIONS	st.1	/^.SH OPTIONS$/;"	s	title:ST
 PKG_CONFIG	config.mk	/^PKG_CONFIG = pkg-config$/;"	m
 PREFIX	config.mk	/^PREFIX = \/usr\/local$/;"	m
+Patches	README.md	/^# Patches$/;"	c
 Rune	st.h	/^typedef uint_least32_t Rune;$/;"	t	typeref:typename:uint_least32_t
+Running st	README.md	/^# Running st$/;"	c
 SEE	st.1	/^.SH SEE ALSO$/;"	s	title:ST
 SEL_EMPTY	st.h	/^	SEL_EMPTY = 1,$/;"	e	enum:selection_mode
 SEL_IDLE	st.h	/^	SEL_IDLE = 0,$/;"	e	enum:selection_mode
@@ -238,6 +242,7 @@ TermWindow	x.c	/^} TermWindow;$/;"	t	typeref:struct:__anon0b88b7ae0408	file:
 UTF_INVALID	st.c	/^#define UTF_INVALID /;"	d	file:
 UTF_SIZ	st.c	/^#define UTF_SIZ /;"	d	file:
 VERSION	config.mk	/^VERSION = 0.8.2$/;"	m
+What is ST?	README.md	/^# What is ST?$/;"	c
 X11INC	config.mk	/^X11INC = \/usr\/X11R6\/include$/;"	m
 X11LIB	config.mk	/^X11LIB = \/usr\/X11R6\/lib$/;"	m
 XEMBED_FOCUS_IN	x.c	/^#define XEMBED_FOCUS_IN /;"	d	file:
@@ -278,7 +283,6 @@ a/st.c	patches/st-copyurl-20190202-0.8.1.diff	/^--- a\/st.c$/;"	m
 a/st.c	patches/st-externalpipe-0.8.2.diff	/^--- a\/st.c$/;"	m
 a/st.c	patches/st-keyboard_select-0.8.2.diff	/^--- a\/st.c$/;"	m
 a/st.c	patches/st-scrollback-20190331-21367a0.diff	/^--- a\/st.c$/;"	m
-a/st.c	patches/st-vertcenter-0.7.diff	/^--- a\/st.c$/;"	m
 a/st.h	patches/st-alpha-0.8.2.diff	/^--- a\/st.h$/;"	m
 a/st.h	patches/st-copyurl-20190202-0.8.1.diff	/^--- a\/st.h$/;"	m
 a/st.h	patches/st-externalpipe-0.8.2.diff	/^--- a\/st.h$/;"	m
@@ -292,6 +296,7 @@ a/x.c	patches/st-bold-is-not-bright-20190127-3be4cf1.diff	/^--- a\/x.c$/;"	m
 a/x.c	patches/st-clipboard-0.8.2.diff	/^--- a\/x.c$/;"	m
 a/x.c	patches/st-font2-20190326-f64c2f8.diff	/^--- a\/x.c$/;"	m
 a/x.c	patches/st-keyboard_select-0.8.2.diff	/^--- a\/x.c$/;"	m
+a/x.c	patches/st-vertcenter-0.7.diff	/^--- a\/x.c	Tue Mar 20 00:28:57 2018$/;"	m
 actionfps	config.def.h	/^static unsigned int actionfps = 30;$/;"	v	typeref:typename:unsigned int
 actionfps	config.h	/^static unsigned int actionfps = 30;$/;"	v	typeref:typename:unsigned int
 all	Makefile	/^all: options st$/;"	t
@@ -339,7 +344,7 @@ ch	x.c	/^	int ch; \/* char height *\/$/;"	m	struct:__anon0b88b7ae0408	typeref:ty
 charset	st.c	/^	int charset;  \/* current charset *\/$/;"	m	struct:__anon7c9e12dd0408	typeref:typename:int	file:
 charset	st.c	/^enum charset {$/;"	g	file:
 chscale	config.def.h	/^static float chscale = 1.0;$/;"	v	typeref:typename:float
-chscale	config.h	/^static float chscale = 1.0;$/;"	v	typeref:typename:float
+chscale	config.h	/^static float chscale = 1.15;$/;"	v	typeref:typename:float
 clean	Makefile	/^clean:$/;"	t
 clipboard	x.c	/^	char *primary, *clipboard;$/;"	m	struct:__anon0b88b7ae0708	typeref:typename:char **	file:
 clipcopy	x.c	/^clipcopy(const Arg *dummy)$/;"	f	typeref:typename:void
@@ -355,6 +360,10 @@ colorname	config.h	/^static const char *colorname[] = {$/;"	v	typeref:typename:c
 cols	config.def.h	/^static unsigned int cols = 80;$/;"	v	typeref:typename:unsigned int
 cols	config.h	/^static unsigned int cols = 80;$/;"	v	typeref:typename:unsigned int
 config.h	Makefile	/^config.h:$/;"	t
+copyoutput	config.def.h	/^static char *copyoutput[] = { "\/bin\/sh", "-c", "st-copyout", "externalpipe", NULL };$/;"	v	typeref:typename:char * []
+copyoutput	config.h	/^static char *copyoutput[] = { "\/bin\/sh", "-c", "st-copyout", "externalpipe", NULL };$/;"	v	typeref:typename:char * []
+copyurlcmd	config.def.h	/^static char *copyurlcmd[] = { "\/bin\/sh", "-c",$/;"	v	typeref:typename:char * []
+copyurlcmd	config.h	/^static char *copyurlcmd[] = { "\/bin\/sh", "-c",$/;"	v	typeref:typename:char * []
 cresize	x.c	/^cresize(int width, int height)$/;"	f	typeref:typename:void
 csidump	st.c	/^csidump(void)$/;"	f	typeref:typename:void
 csiescseq	st.c	/^static CSIEscape csiescseq;$/;"	v	typeref:typename:CSIEscape	file:
@@ -371,6 +380,7 @@ cursorthickness	config.h	/^static unsigned int cursorthickness = 2;$/;"	v	typere
 cw	x.c	/^	int cw; \/* char width  *\/$/;"	m	struct:__anon0b88b7ae0408	typeref:typename:int	file:
 cwscale	config.def.h	/^static float cwscale = 1.0;$/;"	v	typeref:typename:float
 cwscale	config.h	/^static float cwscale = 1.0;$/;"	v	typeref:typename:float
+cyo	x.c	/^	int cyo; \/* char y offset *\/$/;"	m	struct:__anon0b88b7ae0408	typeref:typename:int	file:
 dc	x.c	/^static DC dc;$/;"	v	typeref:typename:DC	file:
 defaultattr	config.def.h	/^static unsigned int defaultattr = 11;$/;"	v	typeref:typename:unsigned int
 defaultattr	config.h	/^static unsigned int defaultattr = 11;$/;"	v	typeref:typename:unsigned int
@@ -486,6 +496,8 @@ ocx	st.c	/^	int ocx;      \/* old cursor col *\/$/;"	m	struct:__anon7c9e12dd0408
 ocy	st.c	/^	int ocy;      \/* old cursor row *\/$/;"	m	struct:__anon7c9e12dd0408	typeref:typename:int	file:
 oe	st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anon7c9e12dd0208	typeref:struct:__anon7c9e12dd0208::__anon7c9e12dd0308	file:
 oldbutton	x.c	/^static int oldbutton = 3; \/* button event on startup: 3 = release *\/$/;"	v	typeref:typename:int	file:
+openurlcmd	config.def.h	/^static char *openurlcmd[] = { "\/bin\/sh", "-c",$/;"	v	typeref:typename:char * []
+openurlcmd	config.h	/^static char *openurlcmd[] = { "\/bin\/sh", "-c",$/;"	v	typeref:typename:char * []
 opt_alpha	x.c	/^static char *opt_alpha = NULL;$/;"	v	typeref:typename:char *	file:
 opt_class	x.c	/^static char *opt_class = NULL;$/;"	v	typeref:typename:char *	file:
 opt_cmd	x.c	/^static char **opt_cmd  = NULL;$/;"	v	typeref:typename:char **	file:
