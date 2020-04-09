@@ -53,6 +53,7 @@ As described by suckless:
 * AnySize
 * ScrollBack
 * ExternalPipe
+* VertCenter
 
 # Running st
 You can either open another terminal and type `st&` or you can get an application launcher like [rofi](https://github.com/davatorium/rofi) or [dmenu](https://tools.suckless.org/dmenu/) to do that for you.
