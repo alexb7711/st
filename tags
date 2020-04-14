@@ -344,7 +344,7 @@ ch	x.c	/^	int ch; \/* char height *\/$/;"	m	struct:__anon0b88b7ae0408	typeref:ty
 charset	st.c	/^	int charset;  \/* current charset *\/$/;"	m	struct:__anon7c9e12dd0408	typeref:typename:int	file:
 charset	st.c	/^enum charset {$/;"	g	file:
 chscale	config.def.h	/^static float chscale = 1.0;$/;"	v	typeref:typename:float
-chscale	config.h	/^static float chscale = 1.15;$/;"	v	typeref:typename:float
+chscale	config.h	/^static float chscale = 1.0;$/;"	v	typeref:typename:float
 clean	Makefile	/^clean:$/;"	t
 clipboard	x.c	/^	char *primary, *clipboard;$/;"	m	struct:__anon0b88b7ae0708	typeref:typename:char **	file:
 clipcopy	x.c	/^clipcopy(const Arg *dummy)$/;"	f	typeref:typename:void
@@ -416,8 +416,8 @@ f	st.h	/^	float f;$/;"	m	union:__anon7c9e12e2020a	typeref:typename:float
 fg	st.h	/^	uint32_t fg;      \/* foreground  *\/$/;"	m	struct:__anon7c9e12e20108	typeref:typename:uint32_t
 flags	x.c	/^	int flags;$/;"	m	struct:__anon0b88b7ae0b08	typeref:typename:int	file:
 focus	x.c	/^focus(XEvent *ev)$/;"	f	typeref:typename:void
-font	config.def.h	/^static char *font = "Hurmit Nerd Font Mono:pixelsize=14:antialias=true:autohint=true";$/;"	v	typeref:typename:char *
-font	config.h	/^static char *font = "Hurmit Nerd Font Mono:pixelsize=14:antialias=true:autohint=true";$/;"	v	typeref:typename:char *
+font	config.def.h	/^static char *font = "Hurmit Nerd Font Mono:pixelsize=18:antialias=true:autohint=true";$/;"	v	typeref:typename:char *
+font	config.h	/^static char *font = "Hurmit Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";$/;"	v	typeref:typename:char *
 font	x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon0b88b7ae0908	typeref:typename:Font	file:
 font	x.c	/^	XftFont *font;$/;"	m	struct:__anon0b88b7ae0b08	typeref:typename:XftFont *	file:
 forcemousemod	config.def.h	/^static uint forcemousemod = ShiftMask;$/;"	v	typeref:typename:uint
