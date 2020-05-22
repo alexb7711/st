@@ -303,7 +303,7 @@ all	Makefile	/^all: options st$/;"	t
 allowaltscreen	config.def.h	/^int allowaltscreen = 1;$/;"	v	typeref:typename:int
 allowaltscreen	config.h	/^int allowaltscreen = 1;$/;"	v	typeref:typename:int
 alpha	config.def.h	/^float alpha = 0.2;$/;"	v	typeref:typename:float
-alpha	config.h	/^float alpha = 0.2;$/;"	v	typeref:typename:float
+alpha	config.h	/^float alpha = 0.6;$/;"	v	typeref:typename:float
 alt	st.c	/^	Line *alt;    \/* alternate screen *\/$/;"	m	struct:__anon7c9e12dd0408	typeref:typename:Line *	file:
 alt	st.c	/^	int alt;$/;"	m	struct:__anon7c9e12dd0208	typeref:typename:int	file:
 appcursor	x.c	/^	signed char appcursor; \/* application cursor *\/$/;"	m	struct:__anon0b88b7ae0308	typeref:typename:signed char	file:
@@ -344,7 +344,7 @@ ch	x.c	/^	int ch; \/* char height *\/$/;"	m	struct:__anon0b88b7ae0408	typeref:ty
 charset	st.c	/^	int charset;  \/* current charset *\/$/;"	m	struct:__anon7c9e12dd0408	typeref:typename:int	file:
 charset	st.c	/^enum charset {$/;"	g	file:
 chscale	config.def.h	/^static float chscale = 1.0;$/;"	v	typeref:typename:float
-chscale	config.h	/^static float chscale = 1.0;$/;"	v	typeref:typename:float
+chscale	config.h	/^static float chscale = 1.1;$/;"	v	typeref:typename:float
 clean	Makefile	/^clean:$/;"	t
 clipboard	x.c	/^	char *primary, *clipboard;$/;"	m	struct:__anon0b88b7ae0708	typeref:typename:char **	file:
 clipcopy	x.c	/^clipcopy(const Arg *dummy)$/;"	f	typeref:typename:void
@@ -385,7 +385,7 @@ dc	x.c	/^static DC dc;$/;"	v	typeref:typename:DC	file:
 defaultattr	config.def.h	/^static unsigned int defaultattr = 11;$/;"	v	typeref:typename:unsigned int
 defaultattr	config.h	/^static unsigned int defaultattr = 11;$/;"	v	typeref:typename:unsigned int
 defaultbg	config.def.h	/^unsigned int defaultbg = 258;$/;"	v	typeref:typename:unsigned int
-defaultbg	config.h	/^unsigned int defaultbg = 258;$/;"	v	typeref:typename:unsigned int
+defaultbg	config.h	/^unsigned int defaultbg = 0;$/;"	v	typeref:typename:unsigned int
 defaultcs	config.def.h	/^static unsigned int defaultcs = 15;$/;"	v	typeref:typename:unsigned int
 defaultcs	config.h	/^static unsigned int defaultcs = 15;$/;"	v	typeref:typename:unsigned int
 defaultfg	config.def.h	/^unsigned int defaultfg = 15;$/;"	v	typeref:typename:unsigned int
