@@ -15,13 +15,15 @@ static int borderpx = 2;
 /*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
- * 2: utmp option
+ * 2: scroll and/or utmp
  * 3: SHELL environment variable
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
 static char *shell = "/bin/sh";
 char *utmp = NULL;
+/* scroll program: to enable use a string like "scroll" */
+char *scroll = "scroll";
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 /* identification sequence returned in DA and DECID */
@@ -45,9 +47,18 @@ static unsigned int tripleclicktimeout = 600;
 /* alt screens */
 int allowaltscreen = 1;
 
-/* frames per second st should at maximum draw to the screen */
-static unsigned int xfps = 120;
-static unsigned int actionfps = 30;
+/* allow certain non-interactive (insecure) window operations such as:
+   setting the clipboard text */
+int allowwindowops = 0;
+
+/*
+ * draw latency range in ms - from new content/keypress/etc until drawing.
+ * within this range, st draws when content stops arriving (idle). mostly it's
+ * near minlatency, but it waits longer for slow updates to avoid partial draw.
+ * low minlatency will tear/flicker more, as it can "detect" idle too early.
+ */
+static double minlatency = 8;
+static double maxlatency = 33;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
@@ -165,8 +176,10 @@ static uint forcemousemod = ShiftMask;
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
+	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
-	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
+	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
+	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\035"} },
 };
 
 /* Internal keyboard shortcuts. */
@@ -200,8 +213,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               XK_k,           kscrollup,      {.i = -1} },
-	{ MODKEY,               XK_j,           kscrolldown,    {.i = -1} },
+//	{ MODKEY,               XK_k,           kscrollup,      {.i = -1} },
+//	{ MODKEY,               XK_j,           kscrolldown,    {.i = -1} },
 	{ MODKEY,               XK_l,           externalpipe,   {.v = openurlcmd } },
 	{ MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } },
 	{ MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } },
