@@ -81,6 +81,7 @@ void die(const char *, ...);
 void redraw(void);
 void draw(void);
 
+void externalpipe(const Arg *);
 void kscrolldown(const Arg *);
 void kscrollup(const Arg *);
 void printscreen(const Arg *);
@@ -115,11 +116,14 @@ char *xstrdup(char *);
 
 /* config.h globals */
 extern char *utmp;
+extern char *scroll;
 extern char *stty_args;
 extern char *vtiden;
 extern wchar_t *worddelimiters;
 extern int allowaltscreen;
+extern int allowwindowops;
 extern char *termname;
 extern unsigned int tabspaces;
 extern unsigned int defaultfg;
 extern unsigned int defaultbg;
+extern float alpha; 
