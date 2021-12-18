@@ -8,7 +8,7 @@
  */
 
 // static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static char *font = "Hurmit Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Hurmit Nerd Font Mono:pixelsize=13:antialias=true:autohint=true";
 //static char *font = "FiraCode Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
@@ -189,14 +189,8 @@ static MouseShortcut mshortcuts[] = {
 #define TERMMOD (Mod1Mask|ShiftMask)
 // #define TERMMOD (ControlMask|ShiftMask)
 
-static char *openurlcmd[] = { "/bin/sh", "-c",
-    "sed 's/.*│//g' | tr -d '\n' | grep -aEo '(((http|https)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./@&%?$#=_-]*)|((magnet:\\?xt=urn:btih:)[a-zA-Z0-9]*)'| uniq | sed 's/^www./http:\\/\\/www\\./g' | dmenu -w $(xdotool getactivewindow) -i -p 'Follow which url?' -l 10 | xargs -r xdg-open",
-    "externalpipe", NULL };
-
-static char *copyurlcmd[] = { "/bin/sh", "-c",
-    "sed 's/.*│//g' | tr -d '\n' | grep -aEo '(((http|https)://|www\\.)[a-zA-Z0-9.]*[:]?[a-zA-Z0-9./@&%?$#=_-]*)|((magnet:\\?xt=urn:btih:)[a-zA-Z0-9]*)' | uniq | sed 's/^www./http:\\/\\/www\\./g' | dmenu -w $(xdotool getactivewindow) -i -p 'Copy which url?' -l 10 | tr -d '\n' | xclip -selection clipboard",
-    "externalpipe", NULL };
-
+static char *openurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -o", "externalpipe", NULL };
+static char *copyurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -c", "externalpipe", NULL };
 static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
