@@ -8,7 +8,7 @@
  */
 
 // static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static char *font = "Hurmit Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Hurmit Nerd Font Mono:pixelsize=13:antialias=true:autohint=true";
 //static char *font = "FiraCode Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
