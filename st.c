@@ -2778,4 +2778,3 @@ externalpipe(const Arg *arg)
 	/* restore */
 	signal(SIGPIPE, oldsigpipe);
 }
-
