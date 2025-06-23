@@ -2083,7 +2083,6 @@ resource_load(XrmDatabase db, char *name, enum resource_type rtype, void *dst)
    if (ret.addr == NULL || strncmp("String", type, 64))
       return 1;
 
-   printf("%s\n", name);
    switch (rtype) {
       case STRING:
          *sdst = ret.addr;
