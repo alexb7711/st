@@ -14,7 +14,7 @@
 // static char *font =
 //    "FiraCode Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
 static char *font =
-    "Mononoki Nerd Font:pixelsize=18:antialias=true:autohint=true";
+    "SpaceMono Nerd Font:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
